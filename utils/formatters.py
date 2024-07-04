@@ -1,5 +1,3 @@
-# utils/formatters.py
-
 import discord
 import validators
 from datetime import datetime
