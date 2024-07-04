@@ -36,7 +36,7 @@ async def run_bot():
             await bot.start(TOKEN)
         except (discord.ConnectionClosed, discord.GatewayNotFound) as e:
             print(f"Disconnected due to: {e}. Attempting to reconnect...")
-            await asyncio.sleep(5)  # This just waits before attempting to reconnect.
+            await asyncio.sleep(5)
 
 if TOKEN is not None:
     asyncio.run(run_bot())
